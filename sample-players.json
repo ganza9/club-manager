@@ -1,0 +1,20 @@
+{ "players": [{
+    "firstName": "Gennaro",
+    "lastName": "Anzalone",
+    "position": "Wing, Scrumhalf",
+    "bio": "With almost 10 years experience, Gennaro is a new addition to the Quake. Normally a Center or Wing, Gennaro has been playing out of his normal positon to fill a hole at scrumhalf.",
+    "id": "1"
+    }, {
+    "firstName": "Erik",
+    "lastName": "Anderson",
+    "position": "Prop",
+    "bio": "A veteran of the Quake, Erik has been a pivotal player in the front row.",
+    "id": "2"
+    }, {
+    "firstName": "Victor",
+    "lastName": "Swanson",
+    "position": "Eightman",
+    "bio": "Quake's reigning MVP, Victor leads the forward pack in defense as well as being a link to the backs during offensive play.",
+    "id": "3"
+  }]
+}
