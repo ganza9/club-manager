@@ -7,6 +7,6 @@ export class PlayerService {
   constructor() { }
 
   getPlayers() {
-    return PLAYERS;
+    // return PLAYERS;
   }
 }
