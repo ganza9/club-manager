@@ -2,27 +2,27 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PlayerService } from '../player.service';
 import { Player } from '../player.model';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-roster',
   templateUrl: './roster.component.html',
-  styleUrls: ['./roster.component.css']
+  styleUrls: ['./roster.component.css'],
+  providers: [PlayerService]
 })
 export class RosterComponent implements OnInit {
+  players: FirebaseListObservable<any[]>;
 
 
+  constructor(private router: Router, private playerService: PlayerService) { }
 
-  constructor(private router: Router) { }
-
-  players: Player[] = [
-
-  ];
 
   ngOnInit() {
+    this.players = this.playerService.getPlayers();
   }
 
-  goToDetailPage(clickedPlayer: Player) {
-    this.router.navigate(['players', clickedPlayer.id]);
+  goToDetailPage(clickedPlayer) {
+    this.router.navigate(['players', clickedPlayer.$key]);
   };
 
 }
