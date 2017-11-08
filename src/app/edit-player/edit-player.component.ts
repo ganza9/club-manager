@@ -18,4 +18,9 @@ export class EditPlayerComponent implements OnInit {
   beginUpdatingPlayer(playerToUpdate){
     this.playerService.updatePlayer(playerToUpdate);
   }
+
+  beginDeletingPlayer(playerToDelete){
+    this.playerService.deletePlayer(playerToDelete);
+  }
+
 }

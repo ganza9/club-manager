@@ -1,18 +1,20 @@
 <h4>Edit Player</h4>
 
 <label>New Player First Name:</label>
-<input[(ngModel)]="selectedPlayer.firstName">
+<input [(ngModel)]="selectedPlayer.firstName">
 <br>
 
 <label>New Player Last Name:</label>
-<input[(ngModel)]="selectedPlayer.lastName">
+<input [(ngModel)]="selectedPlayer.lastName">
 <br>
 
 <label>New Player Position:</label>
-<input[(ngModel)]="selectedPlayer.position">
+<input [(ngModel)]="selectedPlayer.position">
 <br>
 
 <label>New Player Bio:</label>
-<input[(ngModel)]="selectedPlayer.bio">
+<input [(ngModel)]="selectedPlayer.bio">
 
 <button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+
+<br>

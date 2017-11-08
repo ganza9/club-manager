@@ -30,5 +30,9 @@ export class PlayerService {
                                   bio: localUpdatedPlayer.bio});
   }
 
+  deletePlayer(localPlayerToDelete){
+    var playerEntryInFirebase = this.getPlayerById(localPlayerToDelete.$key);
+    playerEntryInFirebase.remove();
+  }
 
 }
