@@ -14,11 +14,21 @@ export class PlayerService {
     return this.players;
   }
 
+  addPlayer(newPlayer: Player) {
+    this.players.push(newPlayer);
+  }
+
   getPlayerById(playerId: string){
     return this.database.object('players/' + playerId);
   }
 
-  addPlayer(newPlayer: Player) {
-    this.players.push(newPlayer);
+  updatePlayer(localUpdatedPlayer){
+    var playerEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
+    playerEntryInFirebase.update({firstName: localUpdatedPlayer.firstName,
+                                  lastName: localUpdatedPlayer.lastName,
+                                  position: localUpdatedPlayer.position,
+                                  bio: localUpdatedPlayer.bio});
   }
+
+
 }
