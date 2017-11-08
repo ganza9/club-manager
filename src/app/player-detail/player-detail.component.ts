@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { PlayerService } from '../player.service';
 import { Player } from '../player.model';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-player-detail',
