@@ -2,6 +2,10 @@
 
 #### By Gennaro Anzalone
 
+## Description
+
+  A website that manages the roster of a club, team, or group. For this project I chose to use my rugby club, Quake Rugby. Users are able to view the club's roster and individual player details, as well as an about page for the entire club. There is an administrator feature (no authentication required) that allows editing and deleting players.
+
 ## Technologies Used
 
 * Angular
@@ -41,7 +45,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Known Bug
   There are currently no known bugs.
-  
+
 ### License
 
 Copyright (c) 2017 **Gennaro Anzalone**
