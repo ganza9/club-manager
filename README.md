@@ -1,5 +1,17 @@
 # ClubManager
 
+#### By Gennaro Anzalone
+
+## Technologies Used
+
+* Angular
+* JavaScript
+* Node
+* Firebase
+* Bootstrap
+
+# Setup/Installation:
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
@@ -26,3 +38,12 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Known Bug
+  There are currently no known bugs.
+  
+### License
+
+Copyright (c) 2017 **Gennaro Anzalone**
+
+*This software is licensed under the MIT license.*
